@@ -16,20 +16,20 @@ while True:
         tasks = input("Enter your task: ").lower()
         if tasks in to_do_list:
             to_do_list.remove(tasks)
-            print("\nBe careful to not write the same task twice!")
+            print("\nBe careful to not write the same task twice!!")
         create_list(tasks)
         print("\nTasks left to do: {}".format(to_do_list))
         print("\nTasks done: {}".format(done_dict))
     elif answer == 'remove':
         answer_one = input("\nPlease type the name of the task you have finsihed: ").lower()
-        try:                                                                                                     #could use for the whole while loop. Assume it would apply except ValueError to every action in the loop---ask Senesi Abi
+        try:                                                                                                    #could use for the whole while loop. Assume it would apply except ValueError to every action in the loop---ask Senesi Abi
             done.append(to_do_list.pop(to_do_list.index(answer_one)))
             for task in done:
                 done_dict[task] = done_dict.get(task, 0) + 1
             done.clear()
                                                                                                                 #could use remove--done.append(to_do_list.remove(anser_one)), doesnt show empty list, shows None.
         except ValueError:
-            print("\nThe task you wanted to remove doesn't exist or you spelled it wrong. Please try again!")   #how to make it ask for the task again instead of going all the way up to the beginning of the while loop
+            print("\nThe task you wanted to remove doesn't exist or you spelt it wrong. Please try again!")     #how to make it ask for the task again instead of going all the way up to the beginning of the while loop
         print("\nTasks left to do: {}".format(to_do_list))
         print("\nTasks done: {}".format(done_dict))
         if not len(to_do_list):
