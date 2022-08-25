@@ -35,5 +35,5 @@ while True:
         if not len(to_do_list):
             print("\nCongrats top G! You finished all of the tasks!:D\n")
     else:
-        print("\nYOU SHALL NOT BREAK MY CODE MUGGLE!!!!!!\n")
+        print("\nYOU SHALL NOT BREAK MY CODE MUGGLE!!!\n")
         print("\nPlease make sure you only type 'add' or 'remove'. Also check if your spelling is correct and try again! :D\n")
