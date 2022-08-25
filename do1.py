@@ -10,6 +10,7 @@ name = input("\nPlease enter your name:  ").title()
 
 print("\nHello {}, glad you're with us!:D.\nLet's get started and organize the day properly. Consistency and discipline are your way to freedome!\n".format(name))
 
+# infinite loop!
 while True:
     answer = input("Do you want to add or remove a task on your to do list?(add or remove): ").lower()
     if answer == 'add':
