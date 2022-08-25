@@ -16,7 +16,7 @@ while True:
         tasks = input("Enter your task: ").lower()
         if tasks in to_do_list:
             to_do_list.remove(tasks)
-            print("\nBe careful to not write the same task twice!!")
+            print("\nBe careful to not write the same task twice!!!!")
         create_list(tasks)
         print("\nTasks left to do: {}".format(to_do_list))
         print("\nTasks done: {}".format(done_dict))
